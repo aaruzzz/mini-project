@@ -8,10 +8,8 @@ char elements[MAX];
 public:
 Stack();
 ~Stack();
-
 void push(char element);
 int pop();
 int tops();
 bool isEmpty();
 };
-

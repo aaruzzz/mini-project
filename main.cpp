@@ -3,7 +3,6 @@
 #include<string.h>
 using namespace std;
 
-
 int pr(char a){                 //function to check priority
 	
 	if (a=='+') return 1; //lower and same precedence
@@ -12,8 +11,8 @@ int pr(char a){                 //function to check priority
 	if (a=='*') return 2;
 }
 
-int main()
-{
+int main(){
+	
 Stack s;
 char infix[40];
 char postfix[40];
@@ -21,9 +20,7 @@ int count=0;                        //index for infix expression array
 int pf=0;			    //index of postfix expression array
 char fetch;			    //seperating each char of infix expression
 int invalidCheck=0;		    //to keep check if the expression is invalid so postfix 
-
 scanf("%s",infix);
-
 while(count<strlen(infix)){
 	char fetch= infix[count];
 		if(fetch=='+'||fetch=='-'||fetch=='/'||fetch=='*')   
@@ -80,6 +77,3 @@ if(!invalidCheck) puts(postfix);          //if the expression isn't invalid prin
 
 return 0;
 }
-
-
-
